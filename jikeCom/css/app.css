@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+h1,h3,p,a,button{
+	font-family: "微软雅黑";
+}
+.onepage{
+	height: 1050px; 
+}
+.onepage-bg{
+	height: 1080px; 
+	width: 100%;
+	position: absolute;
+	background-position: center center;
+	background-size: cover;
+}
+#onepagebg{
+	background-image: url(../img/bg.jpg);
+}
+.headh1content{
+	margin-top: 150px;
+	line-height: 75px;
+}
+.title-text{
+	margin-left: 50px;
+}
+.headfontsize h1{
+	font-size: 50pt;
+	color:#fff;
+}
+.headfontsize p{
+	color:#fff;
+}
+.twopage{
+	padding:2px 0 0 2px;
+	height:auto;
+	-background-image:url(../img/u=873469863,519208687&fm=206&gp=0.jpg);
+	position:relative;	
+	
+}
+.twopage-text{
+	width:100%;
+	text-align:center;
+}
+.twopage-text-h1{
+	margin-left:120px;
+	letter-spacing:2px;
+	margin-top:80px;
+	margin-bottom:0;
+	padding:20px 0 0 0;
+}
+.twopage-text-h1 h1{
+	width:120px;
+	margin-top:-20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:"微软雅黑";
+}
+.fl{ float:left; }
+.fr{ float:right;}
+.clearFix:after{ content:''; display:block; clear:both; }
+.logo_head{
+	background:url(../images/logo_head.png) no-repeat;
+}
+/*导航*/
+.navbar-default .navbar-nav>.active>a{
+	background-color:#3E63D8
+;
+	color:#fff;
+}
+/*轮播图*/
+.carousel-indicators li.active{
+	background-color:#f37799;
+}
+	
+#btn_login{
+	background-color:#f37799;
+}
+#btn_login:hover{
+	background-color:#f65a85;
+}
+.pasTip{
+	color:#999;
+	margin-left:20px;
+}	
+.quickLog{
+	margin-left:20px;
+}
+	@media (min-width: 1200px){
+		.container {
+			width: 1440px;
+		}
+		.loginBtn,.regBtn{
+			padding:10px 80px; 
+		}
+		.regBtn{
+			color:#7596E5;
+		}
+	}
+	/*我的关注*/
+	.follow .foLi img,.follow .foLi div,.rank .foLi img,.rank .foLi div,.rich .foLi img,.rich .foLi div,.fans .foLi img,.fans .foLi div{
+		margin:6px; 
+	}
+	.follow .foLi img,.follow .titH,.rank .foLi img,.rank .titH,.rich .foLi img,.rich .titH,.fans .foLi img,.fans .titH{
+		margin-left:16px;
+	}
+	.follow .titD,.rank .titD,.rich .titD,.fans .titD{
+		margin-right:16px;
+	}
+	.follow .foLi .spriteLev,.rank .foLi .spriteLev,.rich .foLi .spriteLev,.fans .foLi .spriteLev{
+		margin-top:18px;
+	}
+	.follow img,.rank img,.rich img,.fans img{
+		border-radius:50%;
+	}
+	.follow p,.rank p,.rich p,.fans p{
+		color:#333;
+	}
+	.follow .name,.rank .name,.rich .name,.fans .name{
+		font-size:14px;
+	}
+	.follow .ynLiv,.rank .ynLiv,.rich .ynLiv,.fans .ynLiv{
+		font-size:12px;
+		color:#999; 
+	}
+	.navbar-default{
+		background-color:#fff; 
+		border-color:#f37799;
+		border-bottom-width:1px;
+		font-size:18px;
+	}
+	
+	/*热门*/
+	.hotItem{
+		width:306px;
+		height:444px; 
+	}
+	.hotLi{
+		width:146px;
+		height:213px; 
+	}
+	
+	.hotItem,.hotLi{
+		position:relative;
+		margin-left:14px; 
+		margin-bottom:15px; 
+		-overflow:hidden; 
+	}
+	.hotItem{
+		margin-bottom:10px;
+		
+	}
+	.hotItem .sprite_big_box,.hotLi .sprite_small_box{
+		position:absolute;
+		left:0;
+		top:0;
+		z-index:4;
+	}
+	.hotItem img{
+		width:269px;
+		height:409px;
+		position:absolute;
+		left:18px;
+		top:18px;
+	}
+	.hotLi img{
+		width:130px;
+		height:194px;
+		position:absolute;
+		left:10px;
+		top:10px;
+	}
+	.hotItem .sprite_l{
+		position:absolute;
+		z-index:5;
+		left:10px;
+		top:10px; 
+	}
+	.hotLi .sprite_s{
+		position:absolute;
+		z-index:5;
+		left:4px;
+		top:4px; 
+	}
+	.hotItem .curNum,.hotLi .curNum{
+		position:absolute;
+		height:0px;
+		background-color:rgba(0,0,0,.3);
+		width:90%;
+		top:18px;
+		color:#fff;
+		left:18px;
+		line-height:46px; 
+		font-size:16px;
+		opacity:0;
+		filter:alpha(opacity:0);
+		transition: 0.5s all ease;
+		
+	}
+	.hotLi .curNum{
+		top:10px;
+		left:10px;
+		line-height:28px; 
+		font-size:12px;
+		padding-left:14px; 
+		
+	}
+	.hotItem .infoB,.hotLi .infoB{
+		position:absolute;
+		height:0px;
+		background-color:rgba(0,0,0,.3);
+		width:90%;
+		bottom:8px;
+		color:#fff;
+		left:18px;
+		padding-left:16px;
+		font-size:16px;
+		opacity:0;
+		filter:alpha(opacity:0);
+		transition: 0.5s all ease;
+	}
+	.hotLi .infoB{
+		width:90%;
+		left:10px;
+		font-size:12px;
+	}
+	.hotLi .infoB >p{
+		margin-bottom:0;
+	}
+	.hotItem:hover .curNum{
+		opacity:1;
+		filter:alpha(opacity:1);
+		height:46px;
+	}
+	.hotItem:hover .infoB{
+		opacity:1;
+		filter:alpha(opacity:1);
+		height:70px;
+	}
+	.hotLi:hover .curNum{
+		opacity:1;
+		filter:alpha(opacity:1);
+		height:28px;
+	}
+	.hotLi:hover .infoB{
+		opacity:1;
+		filter:alpha(opacity:1);
+		height:40px;
+	}
+	
+	@media (min-width: 992px){
+		.col-md-9 {
+			width: 80%;
+		}
+		.col-md-3 {
+			width: 20%;
+		}
+		.regLog{
+			font-size:12px;
+		}
+		.navbar-nav {
+			margin-left:50px;
+			font-size:18px;
+		}
+		.navbar-nav li{
+			margin-right:50px; 
+		}
+		.foTit{
+			margin-bottom:14px; 
+		}
+		
+		/*
+		
+		
+		.hotList .slideB{
+			position:absolute;
+			background: rgba(0,0,0,0.3);
+			color:#fff;
+			bottom:0;
+		}*/
+		
+	}
+	
+	
+	
+	
+	
+	
+	/*底部*/
+	.bs-docs-footer {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		margin-top: 100px;
+		color: #767676;
+		text-align: center;
+		border-top: 1px solid #e5e5e5;
+	}
+
